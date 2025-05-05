@@ -1,9 +1,7 @@
 import java.io.IOException;
 import java.util.*;//获取输入需要
 
-import com.sun.tools.javac.Main;
 
-import java.math.*; 
 public class CalculateAbcd{
     public static void main(String[]args)throws IOException{
         Scanner scanner=new Scanner(System.in);
@@ -26,6 +24,7 @@ public class CalculateAbcd{
             double sqrtCd=Math.sqrt(cd);
                 //集齐所有元素
                 double result=sina*cosb*sqrtCd;
-                System.out.println("算数结果是："+result);
+                int intResult=(int)Math.round(result);
+                System.out.println("算数结果是："+intResult);
             }
 }
